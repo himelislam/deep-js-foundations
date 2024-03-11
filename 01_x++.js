@@ -10,5 +10,5 @@ function plusPlus(orig_x){
 
 
 var x = "5";
-plusPlus(x);
+console.log(plusPlus(x)); // 5
 console.log(x); // 6
