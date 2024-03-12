@@ -20,7 +20,8 @@ typeof undeclaredVar;
 console.log(typeof a);
 
 var a = null;
-console.log(typeof a, "null"); // returns value of empthy object cz initialy to unset any values like number developers used undefined and for objects they used null, that is why it returns empthy null;
+console.log(typeof a, "null"); // returns value of empthy object cz initialy to unset any values like number developers used undefined and
+// for objects they used null, that is why it returns empthy null;
 
 a = function(){};
 console.log(typeof a, "function");
