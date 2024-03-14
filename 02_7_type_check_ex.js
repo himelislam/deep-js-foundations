@@ -88,6 +88,7 @@ function ObjectisDemo(x,y){
 
     function isItNaNvalue(x){
         return Number.isNaN(x)
+        // or return x !== x;
     }
 }
 
