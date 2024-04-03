@@ -72,5 +72,4 @@ if (!Object.is || true) {
 
 const isTrue = true;
 
-isTrue.name = "Himel";
 console.log(isTrue.name);

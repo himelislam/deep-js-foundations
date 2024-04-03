@@ -24,8 +24,8 @@ console.log(typeof a, "null"); // returns value of empthy object cz initialy to 
 // for objects they used null, that is why it returns empthy null;
 
 a = function(){};
-console.log(typeof a, "function");
+// console.log(typeof a, "function");
 
 a = [1,2,3,4]
-console.log(typeof a, "array");
+// console.log(typeof a, "array");
 

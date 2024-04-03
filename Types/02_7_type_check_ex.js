@@ -40,6 +40,7 @@ function typeCheck(first,second){
 // solution
 
 if (!Object.is /*|| true*/) {
+    
 	Object.is = function ObjectIs(x,y) {
 		var xNegZero = isItNegZero(x);
 		var yNegZero = isItNegZero(y);
