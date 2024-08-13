@@ -8,7 +8,7 @@
 
 // undeclared
 //---------
-// when a variable has been declared
+// when a variable has been not declared
 
 // ex: console.log(undeclaredVar) // undeclaredVar is not defined -> which is undeclared
 

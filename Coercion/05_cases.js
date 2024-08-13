@@ -47,5 +47,9 @@ function addStd(numStudent){
     return numStudent + 1;
 }
 
+
+
 console.log(addStd("16")); // "161" -> so it coercion to srting 
 console.log(addStd(+"16")); // "17" -> now before sending the param we can forcefully invoke the toNumber coercion
+
+ 
