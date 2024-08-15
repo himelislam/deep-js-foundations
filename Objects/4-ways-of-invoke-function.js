@@ -35,7 +35,7 @@ workshop2.askAgain("Hello from")
 
 // One function but different context
 
-//****************************************** */
+//*********************************************************** */
 
 // 2. Explicit Bindling
 
@@ -73,8 +73,8 @@ var workshop3 = {
     }
 }
 
-setTimeout(workshop3.ask, 10, "helllo"); // it will open the context in global since its an HTML setTimeOut cb function
-setTimeout(workshop3.ask.bind(workshop3), 10, "Hard Bound This"); // therefore we need to use the hard binding the include the context
+// setTimeout(workshop3.ask, 10, "helllo"); // it will open the context in global since its an HTML setTimeOut cb function
+// setTimeout(workshop3.ask.bind(workshop3), 10, "Hard Bound This"); // therefore we need to use the hard binding the include the context
 
 //****************************************************************** */
 
@@ -87,3 +87,39 @@ function ask2(question){
 
 const newEmptyObject = new ask2("Invoking this function with this keyword with a empty object context");
 // undifined Invoking this function with this keyword with a empty object context  ---> res
+
+// there are 4 steps of the process on `new` keyword
+
+// 1. Create a brand new empty Object
+// 2. * Link that object to another object
+// 3. Call the function with referring the empty object as a `this`
+// 4. If the function does not return an object it assume to return `this`
+
+//******************************************************************** */
+ 
+// 4. default binding
+
+var nam = "Himel";
+
+function one(arg){
+    console.log(this.nam, arg);
+}
+
+function two(arg){
+    "use strict";
+    console.log(this.nam, arg);
+}
+
+one("Ine");
+two("Ineee")
+
+// *********************************************************************
+
+// Important note to be covered. the order of this four function, which will be applied first 
+
+// 1, we will check if there's any `new` keyword used then it will invoke with a empty object context
+// 2. Check if the function called with `bind` or `call` with `apply` then it will invoke with provided context
+// 3. check if the function is invoked with context object like workshop.ask() 
+// 4. Lastly with default call with building shape global object.
+
+// *********************************************************************
