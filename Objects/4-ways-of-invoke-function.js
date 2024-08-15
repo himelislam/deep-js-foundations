@@ -123,3 +123,25 @@ two("Ineee")
 // 4. Lastly with default call with building shape global object.
 
 // *********************************************************************
+
+
+
+var workshop = {
+    teacher: "Kyle",
+    ask(question){
+        setTimeout(()=>{
+            console.log(this.teacher, question);
+        }, 1000)
+    }
+}
+
+workshop.ask("One");
+
+var workshop = {
+    teacher: "Kyle",
+    ask: (question)=>{
+        console.log(this.teacher, question);
+    }
+}
+
+workshop.ask("One");
